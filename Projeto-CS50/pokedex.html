@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./geracoes/estilo.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./script.js" defer></script>
+    <title>Pokedex</title>
+</head>
+<body>
+    <div class="navBar">
+        <ul class="horizontal">
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="./noticias.html">Notícias</a></li>
+            <li><a href="./pokedex.html">Pokedex</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <!-- Parte superior -->
+        <div class="header">
+            <input id="inputPokemon" type="text" placeholder="Digite o nome ou número">
+            <button id="check"> Buscar </button><br>
+            <button id="anterior">Anterior</button>
+            <button id="proximo">Proximo</button><br>
+        </div>
+
+        <!-- Informações básicas -->
+
+        <div class="basicInfo">
+            <div class="imagem">
+                <span id="imagem"></span><br>
+            </div>
+            <div class="nomeTipo">
+                <span id="nome"></span><br>
+                <span id="tipo"></span><br>
+            </div>
+        </div>
+
+        <!-- Statisticas -->
+        <div class="status">
+            <div class="stats1">
+                <span class="stats-value" id="altura"></span>
+                <span class="stats-value" id="peso"></span>
+                <span class="stats-value" id="hp"></span>
+                <span class="stats-value" id="speed"></span> 
+            </div>
+            <div class="stats2">
+                <span class="stats-value" id="attack"></span>
+                <span class="stats-value" id="defense"></span>
+                <span class="stats-value" id="sp-attack"></span>
+                <span class="stats-value" id="sp-defense"></span>
+     
+            </div>
+   
+        </div>
+
+
+    </div>
+
+    
+</body>
+</html>

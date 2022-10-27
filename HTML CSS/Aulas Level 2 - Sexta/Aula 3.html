@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 3 - Formulário</title>
+</head>
+<body>
+    <!-- O metodo action é usado para enviar o formulário ao servidor
+        O metodo method é a forma que este formulário será enviado (GET(público) ou POST(privado))-->
+    <form action="" method="get">
+        <!-- A tag input é usada para pedir a informação ao usuário,
+            o atributo "type" que define o tipo de informação pedida
+            o atributo "name" é a referencia/variável que receberá o input-->
+        Nome: <input type="text" name="nome"><br>
+        Senha: <input type="password" name="senha"><br>
+        <hr>
+        Para qual time você torce?<br>
+        <input type="radio" name="time" value="Brasil" checked>Brasil<br>
+        <input type="radio" name="time" value="Argentina">Argentina<br>
+        <input type="radio" name="time" value="Inglaterra">Inglaterra<br>
+        <input type="radio" name="time" value="Alemanha">Alemanha<br>
+        <hr>
+        Escolha seus esportes preferidos<br>
+        <input type="checkbox" name="esporte1" value="Futebol">Futebol<br>
+        <input type="checkbox" name="esporte2" value="Vôlei">Vôlei<br>
+        <input type="checkbox" name="esporte3" value="Basquete">Basquete<br>
+        <input type="checkbox" name="esporte4" value="Handball">Handball<br>
+        <input type="checkbox" name="esporte5" value="Natação">Natação<br>
+        <hr>
+        Escolha sua cor preferida:<br>
+        <input type="color" name="cor"><br>
+
+        Qual seu aniversário?<br>
+        <input type="date" name="data"><br>
+
+        Data e hora:<br>
+        <input type="datetime-local"><br>
+
+        E-mail:<br>
+        <input type="email" name="email"><br>
+
+        Arquivo:<br>
+        <input type="file" name="arquivo"><br>
+
+        Número de camisetas:<br>
+        <input type="number" name="quantidade" min="2" max="20"><br>
+
+        Range:<br>
+        <input type="range" name="pontos" min="0" max="10"><br>
+
+        submit(envia o formulário):<br>
+        <input type="submit" value="Enviar">
+
+        <!-- Reset(apagar o formulário): -->
+        <input type="reset" value="Redefinir"><br>
+
+        Select(menu de seleção)<br>
+        <select name="comidas">
+            <option value="Pizza">Pizza</option>
+            <option value="Pastel">Pastel</option>
+            <option value="Hambúrguer">Hambúrguer</option>
+            <option value="Lasanha">Lasanha</option>
+        </select><br>
+
+        Deixe uma mensagem:<br>
+        <textarea name="mensagem" rows="10" cols="30">
+            Rosas são vermelhas, violetas são azuis
+        </textarea><br>
+
+        button (cria um botão adicional, onclick faz uma ação)<br>
+        <button type="button" onclick="alert('Oi, seu pai tem boi?')">Clique em mim</button><br>
+
+        <h3>Atributos de entrada</h3>
+
+        <input type="text" name="nome" value="Maria"><br>
+        <input type="text" name="nome" value="Jose" readonly><br>
+        <input type="text" name="nome" value="Ana" disabled><br>
+        <input type="text" name="nome" value="João" size="40"><br>
+        <input type="text" name="nome" maxlength="4"><br>
+        <input type="text" name="nome" placeholder="Digite seu nome"><br>
+        <input type="text" name="username" required><br>
+    
+    
+    </form>
+</body>
+</html>

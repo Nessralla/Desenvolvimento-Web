@@ -1,0 +1,64 @@
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin: 2em;
+}
+
+.topnav {
+    background-color: crimson;
+    overflow: hidden;
+}
+
+.banner { 
+    background-color: azure;
+    padding: 15px;
+}
+
+.container {
+    background-color: chocolate;
+    overflow: auto;
+}
+
+.menu { 
+    background-color: darkcyan;
+    width: 20%;
+    float: left;
+}
+
+.main {
+    background-color: darkgreen;
+    width: 60%;
+    padding: 0 20px;
+    float: left;
+}
+
+.right{
+    background-color: dimgrey;
+    width: 20%;
+    padding: 15px;
+    float: left;
+}
+
+.footer{
+    background-color:teal;
+    padding: 10px;
+}
+
+.topnav a{
+    text-decoration: none;
+    color: black;
+    padding: 14px 16px;
+    display: block;
+    float: left;
+}
+
+.menu a{
+    text-decoration: none;
+    background-color: chartreuse;
+    width: 100%;
+    padding: 8px;
+    display: block;
+}
+
+*{
+    box-sizing: border-box;
+}

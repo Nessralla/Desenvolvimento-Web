@@ -1,0 +1,77 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 2em;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.topnav {
+    background-color: aqua;
+    overflow: hidden;
+}
+
+.topnav a {
+    color: rgb(250, 185, 100);
+    text-decoration: none;
+    padding: 14px 16px;
+    display: block;
+    float: left;
+    text-align: center;
+}
+
+.banner {
+    background-color: cornsilk;
+    padding: 15px;
+    margin-top: 7px;
+    text-align: center;
+}
+
+.container {
+    background-color: rgb(255, 255, 255);
+    overflow: auto;
+}
+
+.menu {
+    width: 20%;
+    float: left;
+    text-align: center;
+}
+
+.menu a {
+    background-color: blanchedalmond;
+    text-decoration: none;
+    width: 100%;
+    padding: 8px;
+    display: block;
+    margin-top: 7px;
+}
+
+.main {
+    width: 60%;
+    padding: 0px 20px;
+    float: left;
+}
+
+.right {
+    background-color: rgb(223, 49, 223);
+    width: 20%;
+    padding: 15px;
+    float: left;
+    margin-top: 7px;
+    text-align: center;
+}
+
+.footer {
+    background-color: lightblue;
+    padding: 10px;
+    margin-top: 7px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 620px){
+    .menu, .main, .right{
+        width: 100%;
+    }
+}

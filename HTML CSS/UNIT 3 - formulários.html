@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Aula 03 - Formulários</title>
+
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+
+  <body>
+
+    
+
+    <h2>Elementos de um Formulário</h2>
+    <form action="" method="GET">
+        Nome: <input type="text" name="nome"><br>
+        Senha: <input type="password" name="senha"><br>
+        <hr>
+        Para qual time você torce?<br>
+        <input type="radio" name="time" value="Brasil">Brasil<br>
+        <input type="radio" name="time" value="Argentina">Argentina<br>
+        <input type="radio" name="time" value="Colômbia">Colômbia<br>
+        <input type="radio" name="time" value="outro">Outro<br>
+        <hr>
+        Escolha os esportes que mais gosta:<br>
+        <input type="checkbox" name="esporte1" value="Futebol">Futebol<br>
+        <input type="checkbox" name="esporte2" value="Vôlei">Vôlei<br>
+        <input type="checkbox" name="esporte3" value="Basquete">Basquete<br>
+        <input type="checkbox" name="esporte4" value="Natação">Natação<br>
+        
+        Escolha sua cor preferida:<br>
+        <input type="color" name="cor"><br>
+
+        Dia:<br>
+        <input type="date" name="data"><br>
+
+        Data com horário:<br>
+        <input type="datetime-local"><br>
+
+        E-mail:<br>
+        <input type="email" name="email"><br>
+
+        Arquivo:<br>
+        <input type="file" name="arquivo"><br>
+
+        Número (entre 1 e 6):<br>
+        <input type="number" name="quantidade" min="1" max="6"><br>
+
+        Pontos:<br>
+        <input type="range" name="pontos" min="1" max="15"><br>
+
+        <hr>
+
+        Enviar<br>
+        <input type="submit" value="Enviar"><br>
+
+        Reset<br>
+        <input type="reset" value="Redefinir"><br>
+
+        <hr>
+
+        Menu de opções:<br>
+        <select name="comidas">
+          <option value="X-Salada">X-Salada</option>
+          <option value="X-Bacon">X-Bacon</option>
+          <option value="X-Ovo">X-Ovo</option>
+          <option value="X-Tudo" selected>X-Tudo</option>
+        </select>
+        
+        <hr>
+
+        Deixe aqui sua mensagem de apoio:<br>
+        <textarea name="mensagem" rows="10" cols="100">
+          Mensagem legal pra ficar feliz
+        </textarea><br>
+
+        <button type="button" onclick="alert('Olá mundo')">Clique em mim</button><br>
+
+        <hr>
+
+        Atributos de entrada HTML:<br>
+        <input type="text" name="nome" value="Maria"><br>
+        <input type="text" name="nome" value="João" readonly><br>
+        <input type="text" name="nome" value="Ana" disabled><br>
+        <input type="text" name="nome" value="Cruzeiro Esporte Clube" size="40"><br>
+        <input type="text" name="nome" value="Maria" maxlength="8"><br>
+        Min e Max funciona com number, range, date, datetime-local, month, time e week.<br>
+        <input type="number" name="numero" min="-10" max="20"><br>
+
+        <hr>
+        Placeholder(text, search, url, tel, email, e password) e required<br>
+        <input type="text" name="nome" placeholder="Digite seu nome"><br>
+        <input type="text" name="username" required><br>
+
+
+    </form>
+
+
+  </body>
+
+</html>

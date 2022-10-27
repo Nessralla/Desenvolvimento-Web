@@ -1,0 +1,54 @@
+Cookies
+
+Os cookies são dados armazenados em pequenos arquivos de texto no computador. 
+Eles permitem que informações, como, por exemplo, configurações de sites, idiomas, modo de exibição e qualquer 
+preferência, sejam mantidas no navegador, mesmo que o usuário fique um tempo sem acessar um determinado site.
+
+Algumas vantagens
+
+Acesso aos dados de forma rápida;
+Armazenamento facilitado de dados de sessão: login, carrinho de compras, opções de busca e personalização;
+Rastrear o comportamento do usuário para sugerir uma melhor navegação ou anúncios.
+
+
+Validade de um cookie
+
+A validade do cookie é definida através do tempo que ele irá permanecer guardado no computador. 
+Cada site pode definir o tempo de expiração do cookie; isso pode variar de alguns minutos até vários anos.
+
+
+Criando cookies com JavaScript
+
+O JavaScript pode criar, ler, editar e excluir cookies por meio da propriedade document.cookie. 
+Sua sintaxe pode ser observada a seguir:
+
+
+document.cookie = "nome = Joãozinho";
+
+
+É possível também adicionar uma data de expiração (no horário UTC). Caso o tempo de expiração não seja definido, 
+por padrão o cookie é excluído quando o navegador é fechado.
+
+
+document.cookie = "nome = Joãozinho; expires=Fri, 10 Jun 2025 12:00:00 UTC";
+
+
+Os cookies só aceitam informações do tipo texto (strings), ou seja, se for necessário armazenar um número, booleano ou 
+objeto, será preciso transformá-los para armazenar em um cookie.
+
+
+Exibindo um cookie com JavaScript
+
+    Com o JavaScript, os cookies podem ser exibidos utilizando novamente a propriedade document.cookie. Ela irá retornar todos os cookies em uma string.
+
+
+        document.cookie;
+
+
+Alterando um cookie com JavaScript
+
+    Com JavaScript é possível alterar um cookie do mesmo modo que ele é criado. O cookie antigo é sobrescrito.
+
+
+        document.cookie = "nome= Maria";
+

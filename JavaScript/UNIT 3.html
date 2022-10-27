@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="UNIT 3.js" defer></script>
+    <title>Arrays e functions</title>
+</head>
+<body>
+    <h2> Array </h2>
+
+    <div>
+        <button onclick="preencherSelect()">
+            Preencher Select
+        </button>
+        <select id="meuSelect">
+
+        </select>
+
+        <input id =inputItem>
+        <button onclick="adicionarItem()">
+            Adicionar Item
+        </button>
+
+        <button onclick="removeItem()">
+            Remover item selecionado
+        </button>
+    </div>
+
+    <div>
+        <input id="number1">
+        <button id="mais" onclick="soma()">+</button>
+        <button id="menos" onclick="subtracao()">-</button>
+        <button id="divisao" onclick="divisao()">/</button>
+        <button id="multiplicacao" onclick="multiplicacao()">x</button>
+        <input id="number2">
+        <label>=</label>
+        <label id="resultado"></label>
+    </div>
+
+    <h2>Funções - Média</h2>
+
+    <div>
+
+        <input id="numeroInputs"/>
+        <button onclick="criaInputs()">
+            Criar Inputs
+        </button>
+
+        <div id="divInputs">    
+
+        </div>
+
+    </div>
+
+    <button onclick="calcularMedia()">Calcular Média</button>
+
+    <label> = </label>
+
+    <label id="mediaFinal"></label>
+
+    <h2>Resto da divisão</h2>
+    <button onclick="restoDiv()">Faça aqui</button>
+    <div id="resultadoRestoDiv">
+        
+    </div>
+
+    <h2>Potência</h2>
+    <button onclick="potencia()">
+        Calcule
+    </button>
+    <div id="resultadoPotencia">
+
+    </div>
+
+    <h2>Aleatorio</h2>
+    <button onclick="aleatorio()">
+        Calcule
+    </button>
+    <div id="resultadoAleatorio">
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokeNess - Sua webpage de pokemon</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Barra de navegação -->
+    <nav class="navbar navbar-expand-lg bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">PokeNess</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./noticias.html">Notícias</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pokedex.html">Pokedex</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Gerações
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="./geracoes/primeira.html">Primeira</a></li>
+                  <li><a class="dropdown-item" href="./geracoes/segunda.html">Segunda</a></li>
+                  <li><a class="dropdown-item" href="./geracoes/terceira.html">Terceira</a></li>
+                  <li><a class="dropdown-item" href="./geracoes/quarta.html">Quarta</a></li>
+                  <li><a class="dropdown-item" href="./geracoes/quinta.html">Quinta</a></li>
+                  <li><a class="dropdown-item" href="./geracoes/sexta.html">Sexta</a></li>
+                  <li><a class="dropdown-item" href="./geracoes/setima.html">Sétima</a></li>
+                  <li><a class="dropdown-item" href="./geracoes/oitava.html">Oitava</a></li>
+                </ul>
+              </li>
+
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <br>
+      <!-- Carrossel para exibir imagens de pokemon e ir para as notícias mais recentes -->
+      <div>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./assets/imgs/carrossel1-pokeonGo.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./assets/imgs/carrosel2-streamer.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./assets/imgs/carrossel3-bellibolt.avif" class="d-block w-100" alt="...">
+            </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Próximo</span>
+            </button>
+        </div>
+        </div>
+      <br>
+      <br>
+      <br>
+      <!-- Cartões para exibir as 9 gerações para o usuário clicar caso queira-->
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="./assets/imgs/1geracao.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">1ª Geração</h5>
+                      <p class="card-text"> Lançada em 1996 contava com 151 pokemons para jogar no GameBoy! </p>
+                    </div>
+                    <div class="card-body">
+                      <a href="./geracoes/primeira.html" class="card-link"> Saiba mais </a>
+                    </div>
+                </div>
+            </div>
+           
+            <div class="col-sm-3"> 
+                <div class="card" style="width: 18rem;">
+                    <img src="./assets/imgs/2g-ccard.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">2ª Geração</h5>
+                      <p class="card-text"> Lançada em 2000 contava com 100 novos pokemons para jogar no GameBoy Color! </p>
+                    </div>
+                    <div class="card-body">
+                      <a href="./geracoes/segunda.html" class="card-link"> Saiba mais </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-sm-3"> 
+                <div class="card" style="width: 18rem;">
+                    <img src="./assets/imgs/3g-card.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">3ª Geração</h5>
+                      <p class="card-text"> Lançada em 2003 contava com 135 novos pokemons para jogar no GameBoy Advanced! </p>
+                    </div>
+                    <div class="card-body">
+                      <a href="./geracoes/terceira.html" class="card-link"> Saiba mais </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-sm-3"> 
+                <div class="card" style="width: 18rem;">
+                    <img src="./assets/imgs/4g-card.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">4ª Geração</h5>
+                      <p class="card-text"> Lançada em 2006 contava com 106 novos pokemons para jogar no Nintendo DS! </p>
+                    </div>
+                    <div class="card-body">
+                      <a href="./geracoes/quarta.html" class="card-link"> Saiba mais </a>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <br>
+
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="./assets/imgs/5g-card.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">5ª Geração</h5>
+                      <p class="card-text"> Lançada em 2010 contava com 156 pokemons para jogar no Nintendo DS! </p>
+                    </div>
+                    <div class="card-body">
+                      <a href="./geracoes/quinta.html" class="card-link"> Saiba mais </a>
+                    </div>
+                </div>
+            </div>
+           
+            <div class="col-sm-3"> 
+                <div class="card" style="width: 18rem;">
+                    <img src="./assets/mgs/6g-card.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">6ª Geração</h5>
+                      <p class="card-text"> Lançada em 2013 contava com 72 novos pokemons para jogar no Nintendo 3DS! </p>
+                    </div>
+                    <div class="card-body">
+                      <a href="./geracoes/sexta.html" class="card-link"> Saiba mais </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-sm-3"> 
+                <div class="card" style="width: 18rem;">
+                    <img src="./assets/imgs/7g-card.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">7ª Geração</h5>
+                      <p class="card-text"> Lançada em 2016 contava com 86 novos pokemons para jogar no Nintendo Direct! </p>
+                    </div>
+                    <div class="card-body">
+                      <a href="./geracoes/setima.html" class="card-link"> Saiba mais </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-sm-3"> 
+                <div class="card" style="width: 18rem;">
+                    <img src="./assets/imgs/8g-card.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">8ª Geração</h5>
+                      <p class="card-text"> Lançada em 2019 contava com 95 novos pokemons para jogar no Nintendo Switch! </p>
+                    </div>
+                    <div class="card-body">
+                      <a href="./geracoes/oitava.html" class="card-link"> Saiba mais </a>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+      
+</body>
+</html>

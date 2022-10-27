@@ -1,0 +1,66 @@
+API = Aplication Programming Interface
+
+    É um padrão de programação para facilitar a comunicação entre diversas aplicações
+
+    Exemplo: Google Maps em sites de hoteis, ClimaTempo em sites de viagens, etc
+
+    EM jogos: Clash of Clans, LoL
+
+    Entretenimento: Spotfy, Titch
+
+    Sites de consultas de API (central de compartilhamentos): 
+
+    API para consultas Simples: Usado somente para consulta de dados
+
+    API para persistência de dados: troca de informações de maneira segura
+
+REST
+
+    Representational State Transfer
+    É um estilo de arquitetura para projetar aplicativos web. Ele frequentemente é usado no desenvolvimento de serviços web.
+    O REST não impõe nenhuma regra de implementação, porém coloca princípios para criação de interfaces bem definidas
+
+    Recursos são as informações disponibilizadas pela API. Uma API de hotel por exemplo proporciona os recursos de Clientes, Hoteis e Reservas.
+
+MANIPULAÇÕES
+    É feita através de requisição HTTP. Esses métodos são responsáveis por indicar a ação a ser executada para um dado recursos
+        GET - Consultade de dados de um recurso;
+        POST - Cria um novo recurso;
+        PUT ou PATCH - Atualiza um recurso;
+        DELETE - Deleta um recurso
+
+URI
+    Identificação única. Padrão URI (Uniform Resource Identifier)
+    Exemplos:
+    http://apphotel.com/Cliente
+    http://apphotel.com/hotel/23
+    http://apphotel.com/reserva/?search=Maria
+
+
+    Baseado nos métodos HTTP o servidor que armazena a API processa as requisições e retorna o resultado, junto com
+        código padrão para informar se a requisição foi processada ou não:
+    Respostas:
+    100 - Informações Gerais
+    200 - Sucesso
+    300 - Redirecionamento
+    400 - Erro no Clientes
+    500 - Erro no servidor
+
+    Padrões mais comuns: HTML, JSON(mais utilizado) e XML
+
+AJAX
+    Asynchronous Javascript And XML
+    Com ele é possível ler dados de um servidor da WEB, após a página ter sido carregada, atualizar os dados antes da página
+    carregar ela, enviar dados para o servidor em segundo plano. É nativo do JavaScript.
+
+    Não é uma linguagem de programação.
+    É uma união de um objeto XMLHttpRequest e do DOM.
+
+AJAX/JQUERY
+    Para enviar uma solicitação AJAX via JQUERY, usamos métodos:
+    Buscar informações:
+    $.get(URI, funcao_callback)
+
+    Enviar dados:
+    $.post(URI, data, funcao_callback)
+

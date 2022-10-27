@@ -1,0 +1,110 @@
+a{
+    color: cornflowerblue;
+}
+
+ul.vertical {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 250px;
+    background-color: #dddddd;
+}
+
+.vertical li a {
+    display: block;
+    color: #000000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.vertical li a:hover {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+ul.horizontal {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+    top: 0;
+    position: fixed;
+    width: 100%;
+}
+
+.horizontal li {
+    float: left;
+}
+
+.horizontal li a {
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.horizontal li a:hover {
+    background-color: #111111;
+}
+
+/*Menu Suspenso*/
+
+ul.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position:absolute;
+    background-color: #333333;
+    width: 100%;
+}
+
+ul.submenu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    background-color: #cccccc;
+    display: none;
+}
+
+.menu li {
+    float: left;
+    width: auto;
+    position: relative;
+}
+
+.submenu li {
+    float: left;
+    width: 200px;
+    position: relative;
+}
+
+.menu li a {
+    display:block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.submenu li a {
+    display: block;
+    color: #e2dddd;
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.menu li:hover > ul.submenu {
+    display: block;
+}
+
+.menu li a:hover {
+    background-color: #111111;
+}
+
+.submenu li a:hover {
+    background-color: #cccccc;
+}

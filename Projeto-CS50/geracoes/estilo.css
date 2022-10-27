@@ -1,0 +1,98 @@
+body{
+    background-color: rgb(192, 250, 231);
+}
+
+ul.horizontal {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+    top: 0;
+    position: relative;
+    width: 100%;
+}
+
+.horizontal li {
+    float: left;
+}
+
+.horizontal li a {
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.horizontal li a:hover {
+    background-color: #111111;
+}
+
+.container{
+    position: relative;
+    margin: 1%;
+    text-align: center;
+}
+
+.header{
+    position: relative;
+    margin: 0.5%;
+    flex: content;
+}
+
+.basicInfo{
+    position: relative;
+    margin: 0.5%;
+    flex: content;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+}
+
+img{
+    background-color: #b1cfd6;
+    border-radius: 50%;
+}
+
+.nomeTipo{
+    margin: 0.5%;
+    position: relative;
+    flex: content;
+    flex-direction: column;
+}
+
+.status{
+    position: relative;
+    margin: 5%;
+    flex: content;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.stats-value{
+    background-color: rgb(166, 171, 175);
+    margin: 5%;
+    border-radius: 30%;
+}
+
+.stats1{
+    position: relative;
+    margin: 5%;
+    flex: content;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+}
+
+.stats2{
+    position: relative;
+    margin: 5%;
+    flex: content;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+}

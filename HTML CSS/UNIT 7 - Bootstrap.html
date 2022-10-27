@@ -1,0 +1,100 @@
+<!-- Framework Bootstrap -->
+
+<!--Facil de usar, responsivo-->  
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  </head>
+  <body>
+      <div align="center">
+          <h1>Contatos</h1>
+      </div>
+      <div class="container">
+        <table class="table table-dark table-striped table-bordered table-hover">
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Nome</th>
+                <th scope="col">Sobrenome</th>
+                <th scope="col">E-mail</th>
+            </tr>
+            <tr>
+                <th>1</th>
+                <td>Marcos</td>
+                <td>Silva</td>
+                <td>marcos@supergeeks.com.br</td>
+            </tr>
+            <tr>
+                <th>2</th>
+                <td>José</td>
+                <td>Souza</td>
+                <td>jose@cs.plus</td>
+            </tr>
+            <tr>
+                <th>3</th>
+                <td>Maria</td>
+                <td>Lima</td>
+                <td>maria@gmail.com</td>
+            </tr>
+        </table>
+      </div>
+
+      <div class="container">
+        <div class="card" style="width:300px">
+            <div class="card-header">
+                Meu Card
+            </div>
+            <div class="card-body">
+                Conteúdo do Card
+            </div>
+        </div>
+
+      </div>
+
+      <div class="container">
+          <ul class="nav bg-light">
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Link 1</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Link 2</a>
+              </li>
+              <li>
+                  <a class="nav-link" href="#">Link 3</a>
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Dropdown link
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item" href="#">Item 1</a>
+                      <a class="dropdown-item" href="#">Item 2</a>
+                      <a class="dropdown-item" href="#">Item 3</a>
+                  </div>
+              </li>
+          </ul>
+      </div>
+
+      <div class="container">
+          <form>
+              <div class="form-group">
+                  <label>Nome Completo</label>
+                  <input class="form-control" style="width:300px">
+                  <label>E-mail</label>
+                  <input class="form-control" style="width: 300px" placeholder="Digite seu e-mail">
+                  <label>Senha</label>
+                  <input class="form-control" style="width: 300px" type="password">
+              </div>
+              <button type="submit" class="btn btn-primary">Enviar</button>
+              <button type="submit" class="btn btn-danger">Enviar</button>
+              <button type="submit" class="btn btn-outline-danger">Limpar</button>
+          </form>
+      </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>

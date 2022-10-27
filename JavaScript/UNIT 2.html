@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 2</title>
+    <script src="UNIT 2.js" defer></script>
+</head>
+<body>
+    =<h3>IF/ELSE</h3>
+    <div id="if">
+        <input type="password" id="senha">
+        <button onclick="
+            var pass = document.getElementById('senha').value
+            if (pass =='super123'){
+                alert('bem vindo')
+            }
+            else{
+                alert('errou')
+            };
+            ">
+            Clique Aqui
+        </button>
+    </div>
+    <h3>SWITCH</h3>
+    <div id="switch">
+        <select id="opcoes" >
+            <option value="1">Valor 1</option>
+            <option value="2">Valor 2</option>
+            <option value="3">Valor 3</option>
+        </select>
+        <button onclick="
+            var op = document.getElementById('opcoes').value
+            switch(op){
+                case '1':
+                    alert('1');
+                    break
+                case '2':
+                case '3':
+                    alert('dois ou três');
+                    break
+                default:
+                    alert('nada');
+            }
+        ">Selecionar</button>
+    </div>   
+    <h3> Repetição - FOR </h3>
+    <div id="for">
+        <input id="qtd">
+        <button onclick="
+            var qtdInput = document.getElementById('qtd').value;
+            var htmlFinal = ' ';
+            
+            for (var i = 0; i < qtdInput; i++) {
+                htmlFinal += 'Nome: <input> <br><br>';
+            }
+
+            document.getElementById('nomes').innerHTML = htmlFinal;
+            ">
+            Criar
+        </button>
+
+        <br><br>
+
+        <div id="nomes">
+        </div>
+
+        <div id="while">
+            <button onclick="
+
+
+                htmlFinal = '';
+
+                do {
+                    var num = Math.floor(Math.random() * 10);
+                    htmlFinal += num;
+                } while( num != 2);
+
+                document.getElementById('numeros').innerHTML = htmlFinal;
+            ">
+            Gerar
+        </button>
+        <div id="numeros">
+
+        </div>
+
+        </div>
+    </div>
+
+    <h2>Desafios</h2>
+    <h3>Desafio 1: login e senha </h3>
+    <div>
+        Nome:<input id="name" type="text"><br>
+        Senha:<input type="password" id="senhas"><br>
+        <button id="login" onclick="
+            if (document.getElementById('name').value == 'Alexandre') {
+                if (document.getElementById('senhas').value == 'supergeeks123') {
+                    alert('Seja bem vindo')
+                    document.getElementById('name').value = ''
+                    document.getElementById('senhas').value = ''
+                }
+                else {
+                    alert('Senha errada')
+                }
+            }
+            else {
+                alert('Usuario não encontrado')
+            }
+        ">
+        Login</button>
+    </div>
+
+    <h3>Desafio 2: Seleção de opções duplas</h3>
+    <div>
+        
+        <select  id="selecao"         onchange="
+        if (document.getElementById('selecao').value == 'Frutas') {
+            alert('hehe')
+            var opc = 1
+            }
+        ">
+            <option value="Frutas">Frutas</option>
+            <option value="Cores">Cores</option>
+            <option value="Jogos">Jogos</option>
+        </select>
+        <div id="segundaOpc">
+
+        </div>
+
+    
+
+    </div>
+</body>
+</html>

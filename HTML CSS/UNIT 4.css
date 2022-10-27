@@ -1,0 +1,223 @@
+/* UNIT 4 - Introdução ao CSS */
+
+/*
+
+h1 {  (h1 é o seletor, {} são os blocos de declaração referente a este seletor)
+   color: orange; (aqui color é a propriedade e orange o valor)
+   text-align: center; (text-align é a propriedade e center o valor) (declaração é a união de propriedade e valor)
+}
+
+
+Três formas de referenciar:
+
+tag(nome da tag) = pega em todas as tags determinadas
+Ex: p {
+      color: red;       Muda todos os textos nas tags de parágrafo para vermelho
+    }
+
+ID (#) = Aplica a mudança em um elemento com determinado id, exemplo:
+    <p id='titulo'> texto qualquer </p>
+
+    #titulo {
+        color: red;     Muda a cor do texto do elemento que tem o id titulo
+    }
+
+
+CLASS(.) = Aplica a mudança em todos os elementos de uma determinada classe, exemplo:
+    <p class='titulo'> Texto qualquer </p>
+    <b class='titulo'> Texto em negrito </b>
+    <h1 class='titulo'> Textm qualquer </h1>
+
+    .titulo {
+        color: red;     Mudar a cor de todos os elementos dentro da mesma classe titulo para vermelho
+    }
+
+*/
+
+/* São três formas de utilizar CSS: 
+    FOLHA DE ESTILO EXTERNO:
+        Cada página deve ter no <head> o link do arquivo css. Ex: <link rel="stylesheet" href="style.css">
+    
+    FOLHA DE ESTILO INTERNO:
+        Caso uma página tenha um estilo exclusivo, ela pode usar a folha interna, dentro do <head>. Ex:
+            <head>
+                <style>
+                    body {
+                        background-clor: black;
+                    }
+                    h1{
+                      color: red;
+                      margin-left: 20px;
+                    }
+                </style>
+            </head>
+
+    ESTILO INLINE: 
+        Pode ser usado para aplicar um estilo exclusivo para um elemento. 
+        Ex: <h1 style="color:blue;margin-left:30px;">This is a heading</h1>
+*/
+
+/* Atividade 1: */
+h1 {
+    color: #439172;
+    border: 5px solid blue;
+    background-color: antiquewhite;
+}
+
+/*Atividade 2*/
+body{
+    background-color: burlywood;
+    /* background-image: url("asjdaisdashd"); Caso ao invés de cor queira adicionar uma imagem de fundo 
+        Por padrão ela se repete em x e y.*/
+}
+
+/* Atividade 3 
+    Adicionar comentários no código */
+
+/* Atividade 4
+    Em body é possível determinar que uma imagem somente se repita no eixo x ou y, ou até mesmo não repetir
+    background-repeat: repeat-x;
+    background-repeat: repeat-y;
+    background-repeat: no-repeat; */
+
+/*Atividade 5
+    Bordas: */
+
+p.dotted {border-style: dotted;} /* Faz uma borda pontilhada na tag P class dotted*/
+
+p.dashed {border-style: dashed;} /* Faz uma borda tracejada */
+
+p.solid {border-style: solid;} /* Borda solida*/
+
+p.double {border-style: double;} /* Borda dupla */
+
+p.groove {border-style: groove;} /* Borda com ranhura */
+
+p.ridge {border-style: ridge;} /* Borda elevada */
+
+p.inset {border-style: inset;} /* Borda 3d */
+
+p.outset {border-style: outset;} /* Borda de partida 3d */
+
+p.none {border-style: none;} /* Sem borda */
+
+p.hidden {border-style: hidden;} /* Borda escondida */
+
+p.mix {border-style: dotted dashed solid double;} /* Cada um se refere a um lado da borda */
+
+/* Também é possível configurar espessura da borda */
+
+p.um {
+    border-style: solid;
+    border-width: 5px;
+  }
+  
+  
+p.dois {
+    border-style: solid;
+    border-width: medium;
+  }
+  
+  
+p.tres {
+    border-style: solid;
+    border-width: 2px 10px 4px 20px;
+  }
+
+/* Como também se ela é normal ou arredondada */
+
+p.normal {
+    border: 2px solid red;
+  }
+  
+  
+p.redondo1 {
+    border: 2px solid red;
+    border-radius: 5px;
+  }
+  
+  
+p.redondo2 {
+    border: 2px solid red;
+    border-radius: 8px;
+  }
+  
+  
+p.redondo3 {
+    border: 2px solid red;
+    border-radius: 12px;
+  }
+
+/* Podemos modificar o alinhamento de um elemento */
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    text-align: left;
+}
+
+h4 {
+    text-align: right;
+}
+
+/* Como também podemos remover ou adicionar linha ao texto*/
+
+a {
+    text-decoration: none;
+}
+
+h2.linhacima {
+    text-decoration: overline;
+}
+
+h3.tachado {
+    text-decoration: line-through;
+}
+
+h4.linhabaixo {
+    text-decoration: underline;
+}
+
+/* Também podemos transformar todas as letras em maiúsuclas, minúsculas ou capitalized*/ 
+
+p.uppercase {
+    text-transform: uppercase;
+}
+
+p.lowercase {
+    text-transform: lowercase;
+}
+
+p.capitalize {
+    text-transform: capitalize;
+}
+
+/* Editar sombra */
+
+h2.sombra {
+    text-shadow: 3px 2px red;
+}
+
+/* Podemos escolher as famílias das fontes, pois pode ocorrer de algum navegador não suportar determinada fonte
+por isso sempre separamos entre duas família, a serif e sans-serif. Também damos mais de uma opção ao navegador
+caso ele não encontre a primeira, tenta a segunda. Isto evita do site ficar estranho com uma fonte aleatória*/ 
+
+b.a1 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+b.a2 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Também podemos modificar a fonte. O formato em permite que o usuário possa redimensionar o tamanho do texto*/ 
+
+p.px {
+    font-size: 40px;
+}
+
+p.em {
+    font-size: 2.5em;
+}

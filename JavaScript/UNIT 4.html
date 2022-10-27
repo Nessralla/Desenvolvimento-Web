@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="UNIT 4.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <title>JQUERY e OBJECTS</title>
+</head>
+<body>
+    <h2>Carrinho de Compra</h2>
+    Nome: <input id="nome">
+    Quantidade: <input id="quantidade">
+    Preço: <input id="preco">
+
+    <button onclick="adicionarItem()">Adicionar Item</button>
+
+    <table id="tabelaItensId">
+        <tr>
+            <th>Nome</th>
+            <th>Quantidade</th>
+            <th>Preço</th>
+        </tr>    
+    </table>
+    <button onclick="fecharCompra()">Fechar Compra</button>
+    <label id="fechamentoLabelId"></label>
+
+    <!-- DESAFIO: -->
+
+
+    <h4>ATOR</h4>
+    Nome: <input id="nomeAtor">
+    Sobrenome:<input id="sobrenomeAtor"><br>
+    Cache: <input id="cacheAtor"><br>
+    <button id="inserirAtor" onclick="inserirAtor()">Inserir Ator</button>
+    <h4>SET</h4> 
+    Nome do local: <input id="localSet"><br>
+    Custo da locação: <input id="custoLocSet"><br>
+    Horas Utilizadas: <input id="horasUtiSet"><br>
+    <button id="inserirSet" onclick="inserirSet()">Inserir Set</button><br>
+
+    <table id="tabelaItensAtores" border="=1">
+        <tr>
+            <th colspan="3">Atores</th>
+        </tr>
+        <tr>
+            <td id="nome">Nome</td>
+            <td id="sobrenome">Sobrenome</td>
+            <td id="cache">Cache</td>
+        </tr>
+    </table><br><br>
+    <table id="tabelaItensSets" border="=1">
+        <tr>
+            <th colspan="3">Set</th>
+        </tr>
+        <tr>
+            <td id="nomeLocal">Nome</td>
+            <td id="custoLocal">Custo</td>
+            <td id="horasLocal">Horas de gravação</td>
+        </tr>
+    </table><br><br>
+    <button id="checkout" onclick="calculaCustos()">Calcule o valor</button><br>
+    <span id="resultado"></span>
+</body>
+</html>
